@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Winning Tips Kenya | Premium VIP Predictions</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet" />
+    <style>
+      /* Custom styles for the primary color and fonts */
+      :root {
+        --primary: #00b569; /* Kenyan Green */
+        --primary-dark: #008f53;
+        --secondary: #2f2f2f;
+      }
+      .text-primary {
+        color: var(--primary);
+      }
+      .bg-primary {
+        background-color: var(--primary);
+      }
+      .hover\:bg-primary-dark:hover {
+        background-color: var(--primary-dark);
+      }
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f7f7f7;
+      }
+      .scroll-mt-24 {
+        scroll-margin-top: 6rem;
+      } /* for fixed header */
+      .vip-glow {
+        box-shadow: 0 10px 30px -5px rgba(0, 181, 105, 0.5);
+        background: linear-gradient(135deg, #00b569, #007a47);
+      }
+      .pricing-card {
+        @apply bg-white p-6 rounded-xl shadow-xl border-t-8 transition duration-300 transform hover:scale-[1.03];
+      }
+      .bronze {
+        @apply border-yellow-800;
+      }
+      .silver {
+        @apply border-gray-400;
+      }
+      .gold {
+        @apply border-yellow-300;
+      }
+
+      /* Floating WhatsApp Button Style */
+      .floating-whatsapp {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        width: 60px;
+        height: 60px;
+        background-color: #25d366; /* WhatsApp Green */
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s ease;
+      }
+      .floating-whatsapp:hover {
+        transform: scale(1.1);
+      }
+
+      /* MOBILE TABLE RESPONSIVENESS FIX */
+      @media (max-width: 640px) {
+        .mobile-tiny-text {
+          font-size: 0.6rem; /* VERY small: ~9.6px */
+        }
+        .mobile-p-1 td,
+        .mobile-p-1 th {
+          padding: 4px 2px !important; /* Minimum padding */
+        }
+        .text-wrap-mobile {
+          /* Allow Match/Prediction text to wrap */
+          white-space: normal !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating WhatsApp Icon -->
+    <a
+      href="https://wa.me/254753101820?text=Hello%2C%20I%20have%20a%20question%20about%20your%20VIP%20tips."
+      target="_blank"
+      class="floating-whatsapp"
+      aria-label="WhatsApp Support Link">
+      <!-- WhatsApp Icon SVG -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 448 512"
+        class="w-8 h-8 fill-white">
+        <path
+          d="M380.9 97.1C339 55.1 283.6 32 225.6 32c-124 0-224 100-224 224 0 40 10 79 28 113.6L4.7 472.1l117.4-30.8c34.5 18.9 73.5 28.7 113.5 28.7 124 0 224-100 224-224 0-57.9-23.2-113.4-65.7-155.9zM225.6 448c-34.9 0-68.9-9.5-98.3-27.4l-7-4-70.6 18.5 19-68.2-4.5-7.2c-19.1-30.8-29.2-66.3-29.2-103.7 0-101.4 82.6-184 184-184 49.3 0 96 19.2 131.1 54.3s54.3 81.8 54.3 131.1c0 101.4-82.6 184-184 184zm118-189.9c-.8-.4-5.2-2.6-9-2.6s-15.6-5.8-19-6.3c-3.4-.6-6-.8-8.5.8-2.6 1.7-10 6.3-12 7.5-2 1.2-4 1.3-7.4.4s-14.7-5.4-28-17.3c-10.4-9.3-17.3-20.7-19.4-24.2-2-3.4-.2-5.3 1.5-6.8 1.5-1.5 3.4-4 5.2-6s2.3-4 3.4-6c1.1-2 1.5-3.7.8-5.1-.8-1.5-2.6-3.8-3.7-5.9-1.1-2-2.3-3.6-3.4-5.2-.8-1.4-4.5-3.5-6.2-4.4-1.7-.9-3.7-1.1-5.7-1.1s-5 0-7.7.8c-2.7.8-10.4 10.2-10.4 25s10.7 29.1 12 31c1.3 2 20.8 31.8 50.4 44.7 7.4 3.2 13.3 5 17.8 6.4 7.2 2.3 13.8 2 19-.6 5.8-3 18.1-7.2 20.6-14.4 2.5-7.2 2.5-13.4.7-16.5-1.7-3.4-6.4-5.4-13.8-8z" />
+      </svg>
+    </a>
+
+    <!-- Header & Navigation -->
+    <header
+      class="sticky top-0 z-50 bg-white shadow-lg border-b-4 border-primary">
+      <div
+        class="container mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center py-4">
+        <a
+          href="#home"
+          class="text-3xl font-extrabold text-primary tracking-wider">
+          Winning <span class="text-secondary">Tips</span>
+        </a>
+        <nav class="hidden md:flex space-x-6 items-center">
+          <a
+            href="#home"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium"
+            >Home</a
+          >
+          <a
+            href="#games"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium"
+            >Previous VIP Games</a
+          >
+          <a
+            href="#vip"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium"
+            >VIP Access</a
+          >
+          <a
+            href="#groups"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium"
+            >Groups</a
+          >
+          <a
+            href="#copyright"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium"
+            >Copyright</a
+          >
+          <a
+            href="#vip"
+            class="px-5 py-2 bg-primary text-white rounded-full font-semibold shadow-md hover:bg-primary-dark transition duration-300 transform hover:scale-105">
+            Join VIP Now
+          </a>
+        </nav>
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobileMenuButton"
+          class="md:hidden text-2xl text-gray-700 hover:text-primary p-2 transition duration-300"
+          aria-label="Toggle Menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div
+      id="mobileMenuOverlay"
+      class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden"
+      aria-hidden="true"></div>
+
+    <!-- Mobile Menu Drawer (The Sidebar) -->
+    <div
+      id="mobileMenu"
+      class="fixed top-0 right-0 w-64 h-full bg-white z-50 transform translate-x-full shadow-2xl transition duration-300 ease-in-out md:hidden">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-8 border-b pb-4">
+          <div class="text-2xl font-extrabold text-primary">Menu</div>
+          <button
+            id="closeMenuButton"
+            class="text-gray-700 hover:text-primary"
+            aria-label="Close Menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav class="flex flex-col space-y-5">
+          <a
+            href="#home"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium text-lg menu-link"
+            >Home</a
+          >
+          <a
+            href="#games"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium text-lg menu-link"
+            >Previous VIP Games</a
+          >
+          <a
+            href="#vip"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium text-lg menu-link"
+            >VIP Access</a
+          >
+          <a
+            href="#groups"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium text-lg menu-link"
+            >Groups</a
+          >
+          <a
+            href="#copyright"
+            class="text-gray-700 hover:text-primary transition duration-300 font-medium text-lg menu-link"
+            >Copyright</a
+          >
+          <a
+            href="#vip"
+            class="mt-6 px-4 py-3 bg-primary text-white rounded-lg font-bold text-center shadow-lg transform hover:scale-[1.02]">
+            Join VIP Now
+          </a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="container mx-auto p-4">
+      <!-- Home Section (Hero) -->
+      <section
+        id="home"
+        class="scroll-mt-24 text-center py-16 bg-white rounded-xl shadow-lg mt-8">
+        <h1
+          class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
+          Daily Sure <span class="text-primary">Football Predictions</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+          Stop losing money! Access our professionally analyzed and proven VIP
+          tips for guaranteed consistent returns.
+        </p>
+        <div
+          class="mt-8 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+          <!-- CTA 1: See Previous VIP Games -->
+          <a
+            href="#games"
+            class="px-8 py-3 bg-primary text-white text-lg font-bold rounded-lg shadow-xl hover:bg-primary-dark transition duration-300 transform hover:-translate-y-1">
+            See Previous VIP Games
+          </a>
+          <!-- CTA 2: Get Today's VIP Tips (WhatsApp) -> POINTS TO VIP SECTION -->
+          <a
+            href="#vip"
+            class="px-8 py-3 bg-yellow-500 text-gray-900 text-lg font-bold rounded-lg shadow-md hover:bg-yellow-400 transition duration-300 transform hover:scale-105">
+            Get Today's VIP Tips! 🚀
+          </a>
+        </div>
+      </section>
+
+      <!-- Games Section (Previous VIP Games - Proof) -->
+      <section
+        id="games"
+        class="scroll-mt-24 my-12 p-6 bg-white rounded-xl shadow-lg">
+        <h2
+          class="text-3xl font-bold text-secondary mb-6 border-b-2 border-primary pb-2 text-center">
+          💰 Previous VIP Games (Proof of Wins)
+        </h2>
+        <div class="rounded-lg border border-gray-200 overflow-hidden">
+          <table
+            id="gamesTable"
+            class="min-w-full divide-y divide-gray-200 mobile-p-1 mobile-tiny-text">
+            <thead class="bg-primary text-white">
+              <tr>
+                <th
+                  class="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider rounded-tl-lg">
+                  Match
+                </th>
+                <th
+                  class="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+                  Prediction
+                </th>
+                <th
+                  class="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider">
+                  Score
+                </th>
+                <th
+                  class="px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider rounded-tr-lg">
+                  Status
+                </th>
+              </tr>
+            </thead>
+            <tbody class="bg-white divide-y divide-gray-100" id="tableBody">
+              <tr>
+                <td colspan="4" class="text-center py-4 text-gray-500">
+                  Loading previous VIP tips...
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="text-center text-sm text-gray-500 mt-4">
+          These are real results fetched live from our database across multiple
+          tip categories. Join today to get the next winning slips!
+        </p>
+      </section>
+
+      <!-- VIP Section (Multi-Tier Pricing) -->
+      <section
+        id="vip"
+        class="scroll-mt-24 my-12 p-8 md:p-12 vip-glow rounded-2xl border-4 border-yellow-300">
+        <div class="max-w-6xl mx-auto text-center">
+          <h2
+            class="text-4xl sm:text-5xl font-extrabold text-white mb-4 leading-snug">
+            👑 Choose Your Winning Tier
+          </h2>
+          <p class="text-xl font-light text-gray-100 mb-8">
+            Access meticulously researched, high-certainty tips with **95%+
+            accuracy**. Select the plan that fits your strategy.
+          </p>
+
+          <!-- Payment Info Banner (Till Number MUST be visible) -->
+          <div
+            class="bg-yellow-100 text-gray-900 p-4 rounded-lg shadow-inner mb-8">
+            <p class="text-lg font-extrabold mb-1">
+              M-PESA Till Number:
+              <span class="text-primary text-2xl">3446306</span>
+            </p>
+            <p class="text-md font-semibold text-red-600">
+              After payment, click the WhatsApp button for your chosen package
+              and send your payment screenshot immediately!
+            </p>
+          </div>
+
+          <!-- Pricing Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- BRONZE TIER -->
+            <div class="pricing-card bronze">
+              <h3 class="text-2xl font-bold text-yellow-800 mb-2">Bronze 🥉</h3>
+              <p class="text-4xl font-extrabold text-gray-900 mb-4">KES 250</p>
+              <p
+                class="text-sm uppercase font-semibold text-gray-600 mb-4 border-b pb-4">
+                1 Day Access
+              </p>
+              <ul class="text-left space-y-2 text-gray-700 mb-8">
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> Today's
+                  Sure Tips
+                </li>
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> Minimum
+                  Odds of <strong class="text-red-500">7+</strong>
+                </li>
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> Delivered
+                  via WhatsApp
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/254753101820?text=I%20have%20paid%20KES%20250%20to%20Till%203446306%20for%20the%20Bronze%20package.%20Here%20is%20my%20screenshot."
+                target="_blank"
+                class="block w-full py-3 bg-yellow-800 text-white font-bold rounded-lg shadow-lg hover:bg-yellow-700 transition duration-300">
+                Get Bronze Tips Now
+              </a>
+            </div>
+
+            <!-- SILVER TIER -->
+            <div class="pricing-card silver">
+              <h3 class="text-2xl font-bold text-gray-600 mb-2">Silver 🥈</h3>
+              <p class="text-4xl font-extrabold text-gray-900 mb-4">KES 500</p>
+              <p
+                class="text-sm uppercase font-semibold text-gray-600 mb-4 border-b pb-4">
+                1 Week Access
+              </p>
+              <ul class="text-left space-y-2 text-gray-700 mb-8">
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> Daily VIP
+                  Tips
+                </li>
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> Access to
+                  Higher Odds (10+)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> Weekly
+                  Strategy Updates
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/254753101820?text=I%20have%20paid%20KES%20500%20to%20Till%203446306%20for%20the%20Silver%20package.%20Here%20is%20my%20screenshot."
+                target="_blank"
+                class="block w-full py-3 bg-gray-600 text-white font-bold rounded-lg shadow-lg hover:bg-gray-500 transition duration-300">
+                Get Silver Tips Now
+              </a>
+            </div>
+
+            <!-- GOLD TIER -->
+            <div class="pricing-card gold">
+              <h3 class="text-2xl font-bold text-yellow-500 mb-2">Gold 🥇</h3>
+              <p class="text-4xl font-extrabold text-gray-900 mb-4">KES 1500</p>
+              <p
+                class="text-sm uppercase font-semibold text-gray-600 mb-4 border-b pb-4">
+                1 Month Access
+              </p>
+              <ul class="text-left space-y-2 text-gray-700 mb-8">
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> All Daily
+                  VIP Tips
+                </li>
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> Exclusive
+                  Monthly Mega Slip (50+ Odds)
+                </li>
+                <li class="flex items-center">
+                  <span class="text-primary font-bold mr-2">✓</span> Priority
+                  Support on WhatsApp
+                </li>
+              </ul>
+              <a
+                href="https://wa.me/254753101820?text=I%20have%20paid%20KES%201500%20to%20Till%203446306%20for%20the%20Gold%20package.%20Here%20is%20my%20screenshot."
+                target="_blank"
+                class="block w-full py-3 bg-yellow-500 text-gray-900 font-bold rounded-lg shadow-lg hover:bg-yellow-400 transition duration-300">
+                Go Gold (Best Value)
+              </a>
+            </div>
+          </div>
+
+          <!-- UPDATED SMS SUPPORT LINK -->
+          <a
+            href="sms:+254753101820"
+            class="mt-8 inline-block px-8 py-3 bg-orange-500 text-white font-bold rounded-full shadow-lg hover:bg-orange-600 transition duration-300 text-xl"
+            aria-label="Access SMS Support">
+            Click to Access SMS Support
+          </a>
+        </div>
+      </section>
+
+      <!-- WhatsApp and Telegram Groups Section -->
+      <section
+        id="groups"
+        class="scroll-mt-24 my-12 p-8 bg-primary text-white rounded-xl shadow-lg">
+        <h2
+          class="text-3xl font-bold mb-6 border-b-2 border-white pb-2 text-center">
+          💬 Join Our Free Groups
+        </h2>
+        <div class="max-w-3xl mx-auto text-center">
+          <p class="text-lg mb-6">
+            Get daily free tips, betting insights, and interact with other
+            serious bettors. (Note: VIP Tips are *not* posted in the free
+            groups.)
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <a
+              href="https://chat.whatsapp.com/LUiLETDftVqAjVASi4GOdA?mode=wwt"
+              target="_blank"
+              class="block p-4 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-[1.02]">
+              Join Free WhatsApp Group
+            </a>
+            <a
+              href="https://t.me/cshubfreetips"
+              target="_blank"
+              class="block p-4 bg-white text-gray-900 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300 transform hover:scale-[1.02]">
+              Join Free Telegram Channel
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Disclaimer & Copyright Section -->
+      <section
+        id="copyright"
+        class="scroll-mt-24 my-12 p-8 bg-gray-900 text-white rounded-xl shadow-lg text-center">
+        <h2 class="text-2xl font-bold text-primary mb-4">
+          Disclaimer & Copyright
+        </h2>
+        <p class="text-sm text-gray-400">
+          © 2025 Winning Tips Kenya | All Rights Reserved.
+        </p>
+        <p class="text-xs text-gray-500 mt-2">
+          Gambling can be addictive. Bet Responsibly. 18+. We provide analysis
+          and predictions; outcomes are not guaranteed.
+        </p>
+      </section>
+    </main>
+
+    <!-- Footer (Minimal now that Copyright is separate) -->
+    <footer class="bg-gray-900 text-center p-2">
+      <!-- Just a spacer to separate the section above -->
+    </footer>
+
+    <!-- Application Logic -->
+    <script type="module">
+      const tableBody = document.getElementById("tableBody");
+
+      // --- HARDCODED STATIC DATA (ONLY WON GAMES) ---
+      const DUMMY_TIPS = [
+        {
+          match: "Man City vs Liverpool",
+          tip: "Over 2.5 Goals",
+          result: "3-0",
+          status: "WON",
+          timestamp: 1731175200000,
+        },
+        {
+          match: "Chelsea vs Wolves",
+          tip: "Home Win",
+          result: "3-0",
+          status: "WON",
+          timestamp: 1731173400000,
+        },
+        {
+          match: "Aston Villa vs Bournemouth",
+          tip: "Home Win + O3.5",
+          result: "4-0",
+          status: "WON",
+          timestamp: 1731089000000,
+        },
+        {
+          match: "RC Celta vs FC Barcelona",
+          tip: "Correct Score: 1-4",
+          result: "2-4",
+          status: "WON",
+          timestamp: 1731087200000,
+        },
+        {
+          match: "Brentford vs Newcastle",
+          tip: "BTTS - Yes",
+          result: "3-1",
+          status: "WON",
+          timestamp: 1731002400000,
+        },
+        {
+          match: "Atletico Madrid vs Levante",
+          tip: "Home Win & U4.5",
+          result: "3-1",
+          status: "WON",
+          timestamp: 1730914200000,
+        },
+        {
+          match: "Sunderland vs Arsenal",
+          tip: "Draw (X)",
+          result: "2-2",
+          status: "WON",
+          timestamp: 1730829600000,
+        },
+        {
+          match: "Everton vs Fulham",
+          tip: "Home Win",
+          result: "2-0",
+          status: "WON",
+          timestamp: 1730827800000,
+        },
+      ];
+
+      /**
+       * Renders the fetched game data into the HTML table.
+       * @param {Array<Object>} games - Array of game objects (only WON status).
+       */
+      function renderGames(games) {
+        tableBody.innerHTML = "";
+        if (games.length === 0) {
+          tableBody.innerHTML =
+            '<tr><td colspan="4" class="text-center py-4 text-gray-500">No previous tips available yet.</td></tr>';
+          return;
+        }
+
+        games.forEach((game) => {
+          const statusColor = "text-green-600";
+          const statusText = "✅"; // Shortened status text for mobile screen saving
+
+          const row = `
+              <tr class="hover:bg-gray-50 transition duration-150">
+                <!-- Match Column (Allows wrapping on mobile) -->
+                <td class="px-4 py-3 text-gray-800 text-wrap-mobile font-semibold">${
+                  game.match || "N/A"
+                }</td>
+                <!-- Tip (Prediction) Column (Allows wrapping on mobile) -->
+                <td class="px-4 py-3 text-gray-700 text-wrap-mobile font-medium">${
+                  game.tip || "N/A"
+                }</td>
+                <!-- Result (Score) Column (Minimal width) -->
+                <td class="px-4 py-3 whitespace-nowrap font-bold text-gray-800">${
+                  game.result || "N/A"
+                }</td>
+                <!-- Status Column (Minimal width) -->
+                <td class="px-4 py-3 whitespace-nowrap ${statusColor} font-extrabold text-center">${statusText}</td>
+              </tr>`;
+          tableBody.insertAdjacentHTML("beforeend", row);
+        });
+      }
+
+      /**
+       * Loads the hardcoded dummy data (which only contains WON games) and renders it.
+       */
+      function loadStaticTips() {
+        // Sort the dummy data by timestamp (descending) to show newest first
+        const sortedTips = DUMMY_TIPS.sort((a, b) => b.timestamp - a.timestamp);
+
+        // Render all available WON tips
+        renderGames(sortedTips);
+      }
+
+      // --- Application Initialization ---
+      window.onload = loadStaticTips;
+
+      // Mobile Menu and Smooth Scrolling Logic (UI functions)
+      const menuButton = document.getElementById("mobileMenuButton");
+      const closeButton = document.getElementById("closeMenuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+      const overlay = document.getElementById("mobileMenuOverlay");
+      const menuLinks = document.querySelectorAll(".menu-link");
+
+      function toggleMenu() {
+        mobileMenu.classList.toggle("translate-x-full");
+        overlay.classList.toggle("hidden");
+      }
+
+      menuButton.addEventListener("click", toggleMenu);
+      closeButton.addEventListener("click", toggleMenu);
+      overlay.addEventListener("click", toggleMenu);
+
+      menuLinks.forEach((link) => {
+        link.addEventListener("click", toggleMenu);
+      });
+
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          // Allow external links (WhatsApp, SMS, Telegram) to work normally
+          if (
+            this.href.startsWith("http") ||
+            this.href.startsWith("sms:") ||
+            this.href.startsWith("mailto:")
+          )
+            return;
+
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 96,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
